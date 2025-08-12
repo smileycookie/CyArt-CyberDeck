@@ -58,7 +58,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
  ```
-Possible Installation Error:
+### Possible Installation Error:
 --------------------------------------------------
 Job for wazuh-agent.service failed because the control process exited with error code.
 See "systemctl status wazuh-agent.service" and "journalctl -xeu wazuh-agent.service" for details.
@@ -66,15 +66,18 @@ See "systemctl status wazuh-agent.service" and "journalctl -xeu wazuh-agent.serv
 
 Fix:
 1. Edit the Wazuh Agent configuration file:
-   ---sudo nano /var/ossec/etc/ossec.conf
+   ```bash
+   sudo nano /var/ossec/etc/ossec.conf
 
-2. Locate the <address> tag and update it with your Wazuh server IP:
-   ---<address>100.66.240.63</address>
+3. Locate the <address> tag and update it with your Wazuh server IP:
+   ```bash
+   <address>100.66.240.63</address>
 
-3. Save the file and exit (CTRL + O, Enter, CTRL + X).
+4. Save the file and exit (CTRL + O, Enter, CTRL + X).
 
-4. Restart the Wazuh Agent:
-   ---sudo systemctl restart wazuh-agent
+5. Restart the Wazuh Agent:
+   ```bash
+   sudo systemctl restart wazuh-agent
 
 ##### 🪟 For Windows
 ```bash
