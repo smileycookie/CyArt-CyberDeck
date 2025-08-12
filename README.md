@@ -66,15 +66,15 @@ See "systemctl status wazuh-agent.service" and "journalctl -xeu wazuh-agent.serv
 
 Fix:
 1. Edit the Wazuh Agent configuration file:
-   sudo nano /var/ossec/etc/ossec.conf
+   ---sudo nano /var/ossec/etc/ossec.conf
 
 2. Locate the <address> tag and update it with your Wazuh server IP:
-   <address>100.66.240.63</address>
+   ---<address>100.66.240.63</address>
 
 3. Save the file and exit (CTRL + O, Enter, CTRL + X).
 
 4. Restart the Wazuh Agent:
-   sudo systemctl restart wazuh-agent
+   ---sudo systemctl restart wazuh-agent
 
 ##### 🪟 For Windows
 ```bash
