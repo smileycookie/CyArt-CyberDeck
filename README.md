@@ -54,6 +54,8 @@ Run the following command to download and install the Wazuh Agent package, and a
  ```bash
 wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.12.0-1_arm64.deb
 sudo WAZUH_MANAGER='100.66.240.63' dpkg -i ./wazuh-agent_4.12.0-1_arm64.deb
+```
+```
 sudo systemctl daemon-reload
 sudo systemctl enable wazuh-agent
 sudo systemctl start wazuh-agent
