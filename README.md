@@ -40,7 +40,7 @@ This guide explains how to connect an agent machine to a **Tailscale VPN** and t
 
 Use the command below to install and authenticate Tailscale on your agent:
  ```bash
-curl -fsSL https://tailscale.com/install.sh | sh && \
+curl -fsSL https://tailscale.com/install.sh | sh 
 ```
  ```bash
 sudo tailscale up --auth-key=TAILSCALE_AUTH_KEY
@@ -60,7 +60,7 @@ sudo systemctl start wazuh-agent
  ```
 ### Possible Installation Error:
 --------------------------------------------------
-Job for wazuh-agent.service failed because the control process exited with error code.
+Job for wazuh-agent.Service failed because the control process exited with an error code.
 See "systemctl status wazuh-agent.service" and "journalctl -xeu wazuh-agent.service" for details.
 --------------------------------------------------
 
