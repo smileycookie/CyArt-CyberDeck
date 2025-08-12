@@ -44,7 +44,4 @@ Ensure the agent machine is connected to the Tailscale VPN.
 
 Double-check the auth key and server IP before running the command.
 
-Use 
-'''bash 
-systemctl status wazuh-agent 
-to verify the agent is running after installation.
+Use systemctl status wazuh-agent  to verify the agent is running after installation.
