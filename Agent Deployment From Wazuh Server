@@ -1,0 +1,22 @@
+### Agent Deployment from Wazuh Server
+
+This section explains how to deploy a new Wazuh Agent directly from the **Wazuh Server**.
+
+---
+
+#### Step 1: Initiate Agent Deployment
+Inside the Wazuh server dashboard, click on **Deploy New Agent**.
+
+#### Step 2: Select the Agent's Operating System
+Identify the operating system of the agent machine:
+- **Linux / Ubuntu** → Select **DEB aarch64**
+- **Windows** → Select **MSI 32/64-bit**
+- **MacOS** → Choose **Intel** or **Apple Silicon**
+
+#### Step 3: Configure the Server Address
+In the **Server address** field, enter your Wazuh server’s **Tailscale IP**.
+
+#### Step 4: Download and Install the Agent
+A command will be generated. Run the provided command on the agent machine to download and install the Wazuh Agent.
+
+🔒 **Note:** Ensure that the agent machine has internet access and that the Tailscale VPN is connected before running the installation command.
