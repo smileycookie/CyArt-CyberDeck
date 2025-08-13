@@ -1,5 +1,42 @@
 ---
 
+## 🖥️ Starting the Wazuh Server
+
+Follow these steps to start your Wazuh Server and verify it’s accessible.
+
+---
+
+### **Step 1: Login to the Wazuh Server**
+- Use your Wazuh server credentials (default is often `wazuh-user:wazuh`).
+
+---
+
+### **Step 2: Switch to Root Mode**
+```bash
+sudo -i
+
+### **Step 3: Start Wazuh Services
+Run the following commands to start the necessary Wazuh components:
+systemctl start wazuh-manager
+systemctl start wazuh-indexer
+systemctl start wazuh-dashboard
+
+Step 4: Check Tailscale Connection
+Verify that Tailscale is active:
+tailscale status
+
+Step 5: Get the Server IP
+List all IP addresses assigned to the server:
+ip a s
+Look for the Tailscale IP and use it to log into the Wazuh Dashboard via your browser.
+
+Example Dashboard Login
+If your Tailscale IP is 100.66.240.63:
+https://100.66.240.63
+
+
+---
+
 ## 🖥️ Deploying a New Wazuh Agent from the Server
 
 This section explains how to **deploy and configure a Wazuh Agent** directly from the Wazuh Server dashboard.
