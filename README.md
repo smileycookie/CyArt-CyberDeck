@@ -1,7 +1,7 @@
 # CyArt-CyberDeck
 
 ![Static Badge](https://img.shields.io/badge/Status-Completed%20-blue)
-
+### This project is being developed as an assignment during the SOC Internship provided by CyArt I.T Consulting.
 A robust **Log and Data Monitoring System** designed for seamless security oversight.
 
 ---
@@ -25,7 +25,6 @@ Follow these simple steps to get the CyArt-CyberDeck system running on your mach
 
 This guide explains how to connect an agent machine to a **Tailscale VPN** and then link it to a **Wazuh server** for monitoring and management.
 
----
 ---
 
 ## 🖥️ Starting the Wazuh Server
