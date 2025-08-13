@@ -5,14 +5,14 @@
 Follow these steps to start your Wazuh Server and verify it’s accessible.
 
 ---
-
+```bash
 ### **Step 1: Login to the Wazuh Server**
 - Use your Wazuh server credentials (default is often `wazuh-user:wazuh`).
 
 ---
 
 ### **Step 2: Switch to Root Mode**
-```bash
+
 sudo -i
 
 ### **Step 3: Start Wazuh Services
