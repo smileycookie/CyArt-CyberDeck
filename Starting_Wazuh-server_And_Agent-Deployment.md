@@ -44,7 +44,7 @@ This section explains how to **deploy and configure a Wazuh Agent** directly fro
 ---
 
 ### **Step 1: Initiate Agent Deployment**
-From the **Wazuh Server dashboard**, click on:
+From the **Wazuh Server dashboard**, click on: Menu → Agents → Deploy new agent
 
 ---
 
